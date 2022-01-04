@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+
+  overflow: hidden;
+
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  background-color: whitesmoke;
+  width: 20vw;
+  padding: 1rem;
+  text-align: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+  height: 90vh;
+}
+.mid {
+  background-color: #cfcfcf;
+  width: 49vw;
+  overflow: hidden;
+  padding: 2rem;
+}
+.mid h5 {
+  opacity: 0.7;
+}
+.searchbar input {
+  outline: none;
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  padding-left: 1.5rem;
+}
+.searchbar {
+  padding-left: 8rem;
+  position: relative;
+}
+.searchbar i {
+  position: absolute;
+  left: 6.5em;
+  top: 10px;
+}
+.right {
+  width: 30vw;
+  background-color: #cfcfcf;
+  padding: 2rem;
+  overflow: hidden;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-size: 0.9rem;
+  width: 11rem;
+  border-radius: 5px;
+  transition: 0.2s;
+  padding-bottom: 7px;
+  padding: 1rem;
+}
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+nav h2 {
+  margin-top: 1.5rem;
+}
+nav h4 {
+  opacity: 0.7;
+}
+.loigincontainer {
+  padding: 0.8rem;
+  height: 10vh;
+  border-top: 1px solid black;
+  box-shadow: -3px -4px 8px 1px rgba(0, 0, 0, 0.75);
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10%;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+}
+.loigincontainer img {
+  border-radius: 30%;
+  width: 20px;
+  height: 20px;
+}
+.flexino {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  justify-content: space-evenly;
+}
+.headlines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  height: 25vh;
+  background-color: green;
+  border-radius: 5px;
+  padding: 1rem;
+  background-image: url("charfin.png");
+  background-repeat: no-repeat;
+  background-size: 45vw 200px;
+  color: whitesmoke;
+}
+.card h3 {
+  font-size: 2rem;
+}
+.card p {
+  opacity: 0.7;
+}
+.card button {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 15px;
+  margin-left: 5px;
+  outline: none;
+  border: 1px black solid;
+  cursor: pointer;
+}
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headline h2 {
+  font-size: 2rem;
+}
+.songscontainer {
+  display: flex;
+  flex-direction: column;
+}
+.songcontainer {
+  opacity: 0.9;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.songcontainer:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: whitesmoke;
+  box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.75);
+}
+.songcontainer p {
+  display: flex;
+  justify-content: flex-start;
+}
+.songscontainer {
+  height: 30vh;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+.controlpannel {
+  width: 100%;
+  margin: auto;
+  background-color: whitesmoke;
+  height: 12vh;
+  position: relative;
+  bottom: 0;
+  border-radius: 20px;
+  box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.75);
+  padding: 0.7rem;
+}
+.controlbtns {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.volumerange {
+  height: 2px;
+  width: 100px;
+}
+.volume {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.songtime {
+  width: 90%;
+
+  margin-top: 1rem;
+  height: 3px;
+}
+.playnextpre {
+  width: 30%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 5rem;
+}
+.timecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
+.controlpannel i {
+  cursor: pointer;
+}
+#chill {
+  color: blue;
+}
+#chill1 {
+  color: #fff680;
+}
+.cont {
+  width: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 6.5vh;
+}
+.cont p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 7rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 14px -1px #000000;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.cont p:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+.section2 h2 {
+  margin-top: 2rem;
+}
+.section2 img {
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+}
+.artist {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.artist button {
+  margin-left: 3rem;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+}
+.contina {
+  margin-left: 1rem;
+}
+.right span {
+  opacity: 0.7;
+  font-size: 13px;
+}
+.cards {
+  height: 8rem;
+  width: 7em;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  transition: 0.2s;
+  box-shadow: 2px 4px 15px -4px #000000;
+}
+.cards img {
+  height: 3rem;
+  width: 3rem;
+}
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.cards:hover {
+  transform: scale(1.2);
+}
